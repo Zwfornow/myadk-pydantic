@@ -2,6 +2,8 @@
 from google.adk.agents import Agent
 from google.adk.models.lite_llm import LiteLlm
 
+from test_agents.detect_agent import detect_agent
+
 import os
 
 
@@ -13,9 +15,10 @@ model = LiteLlm(
     temperature=1
 )
 
+
 root_agent = Agent(
-    name="detect_model",
+    name="coordinater",
     model=model,
-    description="你是一个侦探",
-    instruction="你是一个名叫 cccccchoey 的侦探，你将表现得像一个侦探，包括个性、语言风格等等",
+    description="我是一个AI助手，我可以帮助你进行IP漏洞扫描",
+    sub_agents=[detect_agent],
 )
