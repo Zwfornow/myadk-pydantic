@@ -6,18 +6,25 @@
     <title>我的学习笔记</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-family: Arial, sans-serif;
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px;
             line-height: 1.6;
         }
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 2rem;
+        h1 { color: #2c3e50; }
+        .success { 
+            background: #d4edda; 
+            padding: 20px; 
             border-radius: 8px;
+            border-left: 4px solid #28a745;
             margin-bottom: 2rem;
+        }
+        nav {
+            background: #2c3e50;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 2rem 0;
         }
         nav a {
             color: white;
@@ -25,45 +32,52 @@
             text-decoration: none;
         }
         section {
-            margin: 2rem 0;
-            padding: 1.5rem;
             background: #f8f9fa;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
             border-radius: 8px;
+            border-left: 4px solid #3498db;
         }
         .note-link {
             display: block;
-            padding: 0.5rem;
+            padding: 0.8rem;
             margin: 0.5rem 0;
             background: white;
             border-radius: 4px;
             text-decoration: none;
             color: #333;
+            border: 1px solid #ddd;
         }
         .note-link:hover {
             background: #e9ecef;
+            border-color: #3498db;
+        }
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1rem;
+            border-top: 1px solid #ddd;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>我的学习笔记库</h1>
-        <nav>
-            <a href="index.html">首页</a>
-            <a href="#notes">学习笔记</a>
-            <a href="#projects">项目文档</a>
-        </nav>
-    </header>
+    <div class="success">
+        <h1>🎉 GitHub Pages 学习笔记网站</h1>
+        <p>这是一个完全静态的网站，适合展示学习笔记和项目文档。</p>
+    </div>
+
+    <nav>
+        <a href="#notes">学习笔记</a>
+        <a href="#projects">项目文档</a>
+        <a href="#about">关于</a>
+    </nav>
 
     <main>
-        <section class="welcome">
-            <h2>欢迎！</h2>
-            <p>这里记录了我的技术学习历程，包括各种编程笔记和项目经验。</p>
-        </section>
-
         <section id="notes">
             <h2>📚 学习笔记</h2>
             <a href="git-notes.html" class="note-link">
-                <strong>Git 版本控制</strong> - 常用命令和工作流
+                <strong>Git 版本控制</strong> - 常用命令和工作流程
             </a>
             <a href="javascript-notes.html" class="note-link">
                 <strong>JavaScript 基础</strong> - 核心概念和语法
@@ -71,22 +85,34 @@
             <a href="html-css-notes.html" class="note-link">
                 <strong>HTML & CSS</strong> - 网页开发基础
             </a>
+            <a href="python-notes.html" class="note-link">
+                <strong>Python 编程</strong> - Python 学习笔记
+            </a>
         </section>
 
         <section id="projects">
             <h2>🚀 项目文档</h2>
-            <a href="project1.html" class="note-link">
-                <strong>个人博客项目</strong> - 基于静态站点的博客系统
+            <a href="projects/blog.html" class="note-link">
+                <strong>个人博客系统</strong> - 基于静态站点的博客
             </a>
-            <a href="project2.html" class="note-link">
+            <a href="projects/todo-app.html" class="note-link">
                 <strong>任务管理工具</strong> - 简易的任务跟踪应用
             </a>
+            <a href="projects/api-docs.html" class="note-link">
+                <strong>API 文档</strong> - 项目 API 接口文档
+            </a>
+        </section>
+
+        <section id="about">
+            <h2>ℹ️ 关于本站</h2>
+            <p>这个网站使用 GitHub Pages 搭建，用于记录我的学习历程和技术笔记。</p>
+            <p>所有内容都是静态的 HTML 文件，通过 GitHub Actions 自动部署。</p>
         </section>
     </main>
 
-    <footer style="margin-top: 3rem; text-align: center; color: #666;">
-        <p>最后更新: 2024年 • 
-           <a href="https://github.com/你的用户名/你的仓库名">查看源码</a>
+    <footer>
+        <p>最后更新: 2024年12月 • 
+           <a href="https://github.com/zwformow/myadk-pydantic">查看源码</a>
         </p>
     </footer>
 </body>
