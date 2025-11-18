@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的学习笔记</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        nav a {
+            color: white;
+            margin-right: 1rem;
+            text-decoration: none;
+        }
+        section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .note-link {
+            display: block;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            background: white;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #333;
+        }
+        .note-link:hover {
+            background: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>我的学习笔记库</h1>
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="#notes">学习笔记</a>
+            <a href="#projects">项目文档</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>欢迎！</h2>
+            <p>这里记录了我的技术学习历程，包括各种编程笔记和项目经验。</p>
+        </section>
+
+        <section id="notes">
+            <h2>📚 学习笔记</h2>
+            <a href="git-notes.html" class="note-link">
+                <strong>Git 版本控制</strong> - 常用命令和工作流
+            </a>
+            <a href="javascript-notes.html" class="note-link">
+                <strong>JavaScript 基础</strong> - 核心概念和语法
+            </a>
+            <a href="html-css-notes.html" class="note-link">
+                <strong>HTML & CSS</strong> - 网页开发基础
+            </a>
+        </section>
+
+        <section id="projects">
+            <h2>🚀 项目文档</h2>
+            <a href="project1.html" class="note-link">
+                <strong>个人博客项目</strong> - 基于静态站点的博客系统
+            </a>
+            <a href="project2.html" class="note-link">
+                <strong>任务管理工具</strong> - 简易的任务跟踪应用
+            </a>
+        </section>
+    </main>
+
+    <footer style="margin-top: 3rem; text-align: center; color: #666;">
+        <p>最后更新: 2024年 • 
+           <a href="https://github.com/你的用户名/你的仓库名">查看源码</a>
+        </p>
+    </footer>
+</body>
+</html>
